@@ -1,0 +1,147 @@
+/* * {
+    border-color: royalblue;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 2px;
+}  */
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to right bottom,#0d1d3a,#1a2f55 52%,#365a83);
+}
+.carousel {
+    padding-top: 60px;
+}
+.academic { 
+    padding-top:15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+section, footer {
+    padding-top: 65px;
+    padding-bottom: 15px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+h3 { 
+    color: white;
+}
+meter {
+    width: 85%;
+    height: 30px;
+}
+
+/*testeando clases de estilos*/
+.col-btn { 
+    position: relative;
+}
+
+.col-btn img {
+    width: 100%;
+    height: auto;
+}
+
+.img-btn-add {
+    position: absolute;
+    top: 1%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img-btn-edit {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img-btn-delete {
+    position: absolute;
+    top: 1%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*mas testeos para otros elementos del "card"*/
+.col-btn div.card-body {
+    width: 100%;
+    height: auto;
+}
+
+.card-btn-add {
+    position: absolute;
+    top: 1%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-btn-edit {
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-btn-delete {
+    position: absolute;
+    top: 1%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+/*hasta aca esta parte*/
+
+.btn-edit:hover, .btn-add:hover, .btn-delete:hover {
+    background-color: white;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+

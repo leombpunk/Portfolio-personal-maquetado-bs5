@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstap lib min css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/my-css.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <title>PortFolio ArgProg</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets\images\favicon.png" alt="logo" width="30" /> Leandro Boos
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#section-about">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-experience">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-academic">Educación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-skills">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-proyects">Proyectos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Redes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-github"></i> Github</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</i></a></li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" id="btnLogin" name="btnLogin" class="btn btn-outline-success" href="login.html">
+              Ingresar
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/images/banner1.jpg"
+            class="d-block w-100"
+            alt="imagen 1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/images/banner1.jpg"
+            class="d-block w-100"
+            alt="imagen 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/images/banner1.jpg"
+            class="d-block w-100"
+            alt="imagen 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section id="section-about">
+      <div class="container-fluid">
+        <h3>Acerca de mí</h3>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-3 col-btn">
+              <img
+                src="./assets/images/perfil-equisde.jpg"
+                class="img-fluid rounded-start"
+                alt="foto perfil"
+              />
+              <button type="button" id="btn-add-img-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-perfil" class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button type="button" class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button type="button" class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-9 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">ANALISTA PROGRAMADOR</h5>
+                <p class="card-text">
+                  Mi nombre es Leandro, soy estudiante en la Escuela Superior Normal n°10 (Anexo San Antonio) del ultimo año de la carrera de nivel terciario 
+                  Analista de Sistemas de Computación. Vivo en Misiones - Argentina, Tengo 30 años y estoy en busqueda de
+                  un lugar en el mundo de la programación.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Correo electrónico: leandroboos@gmail.com</small>
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Whatsapp: +543765119764</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-experience">
+      <div class="container-fluid">
+        <h3>Experiencia laboral <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-2 col-btn" style="text-align:center;">
+              <img
+                src="./assets/images/maletin-web.png"
+                class="img-fluid rounded-start academic"
+                alt="experiencia laboral"
+                style="width: 130px; height: auto;"
+              />
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-10 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Año: 2009</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-2 col-btn" style="text-align:center;">
+              <img
+                src="./assets/images/maletin-web.png"
+                class="img-fluid rounded-start academic"
+                alt="experiencia laboral"
+                style="width: 130px; height: auto;"
+              />
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-10 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Año: 2009</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-2 col-btn" style="text-align:center;">
+              <img
+                src="./assets/images/maletin-web.png"
+                class="img-fluid rounded-start academic"
+                alt="experiencia laboral"
+                style="width: 130px; height: auto;"
+              />
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-10 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Año: 2009</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <section id="section-academic">
+      <div class="container-fluid">
+        <h3>Educación <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-2 col-btn" style="text-align:center;">
+              <img
+                src="./assets/images/birrete.png"
+                class="img-fluid rounded-start academic"
+                alt="Birrete"
+                style="width: 130px; height: auto;"
+              />
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-10 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Año: 2009</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-2 col-btn" style="text-align:center;">
+              <img
+                src="./assets/images/birrete.png"
+                class="img-fluid rounded-start academic"
+                alt="Birrete"
+                style="width: 130px; height: auto;"
+              />
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-10 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Año: 2009</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 shadow">
+          <div class="row g-0">
+            <div class="col-md-2 col-btn" style="text-align:center;">
+              <img
+                src="./assets/images/birrete.png"
+                class="img-fluid rounded-start academic"
+                alt="Birrete"
+                style="width: 130px; height: auto;"
+              />
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="col-md-10 col-btn">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Año: 2009</small>
+                </p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-skills">
+      <div class="container-fluid">
+        <h3>Habilidades <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col col-btn">
+            <div class="card h-100 shadow text-center">
+              <div class="card-body">
+                <h4 class="card-title">PHP 8</h4>
+                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
+                <!-- <label for="disk_c">Disk usage C:</label> -->
+                <meter id="disk_c" value="3" min="0" max="10"></meter>
+                <p>Trainee/Junior/Semi Senior/Senior</p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-btn">
+            <div class="card h-100 shadow text-center">
+              <div class="card-body">
+                <h4 class="card-title">PHP 8</h4>
+                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
+                <!-- <label for="disk_c">Disk usage C:</label> -->
+                <meter id="disk_c" value="3" min="0" max="10"></meter>
+                <p>Trainee/Junior/Semi Senior/Senior</p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-btn">
+            <div class="card h-100 shadow text-center">
+              <div class="card-body">
+                <h4 class="card-title">PHP 8</h4>
+                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
+                <!-- <label for="disk_c">Disk usage C:</label> -->
+                <meter id="disk_c" value="3" min="0" max="10"></meter>
+                <p>Trainee/Junior/Semi Senior/Senior</p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-btn">
+            <div class="card h-100 shadow text-center">
+              <div class="card-body">
+                <h4 class="card-title">PHP 8</h4>
+                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
+                <!-- <label for="disk_c">Disk usage C:</label> -->
+                <meter id="disk_c" value="3" min="0" max="10"></meter>
+                <p>Trainee/Junior/Semi Senior/Senior</p>
+                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-proyects">
+      <div class="container-fluid">
+        <div class="row">
+          <h3>Proyectos <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100 shadow col-btn">
+              <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="col-btn">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow col-btn">
+              <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="col-btn">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow col-btn">
+              <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="col-btn">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow col-btn">
+              <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
+              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="col-btn">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
+                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- inicio modales -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop-modal-img-perfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Agregar imagen al perfil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="form-add-img-perfil" action="#" method="post">
+              <div class="row">
+
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modales -->
+    
+    <footer class="card-footer" style="background:rgba(0, 0, 0, 0.788);" id="section-contact">
+      <div class="container-fluid">
+        <!-- <h3>Contacto</h3>
+        <div class="row">
+          <div class="col-6">
+            <form id="formContact">
+              <div class="mb-3">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre">
+              </div>
+              <div class="mb-3">
+                <label for="inputCorreo" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputCorreo">
+              </div>
+              <div class="mb-3">
+                <label for="inputAsunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="inputAsunto">
+              </div>
+              <div class="mb-3">
+                <label for="textareaMessage" class="form-label">Mensaje</label>
+                <textarea class="form-control" name="textareaMessage" id="textareaMessage" cols="30" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-6">aca van datos, hacer una lista o algo asi</div>
+        </div> -->
+       
+      </div>
+    </footer>
+    <!-- bootstap lib min js-->
+    <script src="./assets/css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <!-- Development version -->
+    <script src="https://kit.fontawesome.com/8913d8db3f.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/indexJS.js"></script>
+  </body>
+</html>
+
+<!-- botones de font awesome
+editar = <i class="fa-solid fa-pen-to-square"></i>
+eliminar = <i class="fa-solid fa-trash-can"></i> 
+nuevo/agregar = <i class="fa-solid fa-plus"></i> -->
