@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/my-css.css" />
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
-    <title>PortFolio ArgProg</title>
+    <title>SoftBoos - PortFolio</title>
   </head>
 
   <body>
     <header>
+      <!-- barra de navegacion inicio -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -44,7 +45,7 @@
                 <a class="nav-link" href="#section-skills">Habilidades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#section-proyects">Proyectos</a>
+                <a class="nav-link" href="#section-projects">Proyectos</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -59,11 +60,11 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#"><i class="fa-brands fa-github"></i> Github</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
                   <li><a class="dropdown-item" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
                 </ul>
               </li>
             </ul>
@@ -73,8 +74,10 @@
           </div>
         </div>
       </nav>
+      <!-- barra de navegacion fin -->
     </header>
-
+    <!-- carousel inicio -->
+    <!-- podria cambiarlo por un banner -->
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -156,6 +159,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!-- carousel fin -->
+
+    <!-- secciones del portafolio inicio -->
     <section id="section-about">
       <div class="container-fluid">
         <h3>Acerca de mí</h3>
@@ -167,17 +173,23 @@
                 class="img-fluid rounded-start"
                 alt="foto perfil"
               />
-              <button type="button" id="btn-add-img-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-perfil" class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button type="button" class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button type="button" class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <!-- testeo de nuevos botones que no se muevan  -->
+              <div class="row testeando">
+                <button type="button" id="btn-edit-img-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-perfil-add" class="btn btn-outline-primary img-btn btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-img-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-perfil-delete" class="btn btn-outline-danger img-btn btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+              <!-- ****************fin testeo**************** -->
+
+              <!-- <button type="button" id="btn-edit-img-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-perfil-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 5%; left: 75%;"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button type="button" id="btn-delete-img-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-perfil-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 5%; left: 90%;"><i class="fa-solid fa-trash-can"></i></button> -->
             </div>
             <div class="col-md-9 col-btn">
               <div class="card-body">
-                <h5 class="card-title">ANALISTA PROGRAMADOR</h5>
+                <h4 class="card-title">ANALISTA PROGRAMADOR</h4>
                 <p class="card-text">
-                  Mi nombre es Leandro, soy estudiante en la Escuela Superior Normal n°10 (Anexo San Antonio) del ultimo año de la carrera de nivel terciario 
-                  Analista de Sistemas de Computación. Vivo en Misiones - Argentina, Tengo 30 años y estoy en busqueda de
-                  un lugar en el mundo de la programación.
+                  Mi nombre es Leandro, soy estudiante en la Escuela Superior Normal n°10 (anexo San Antonio) del ultimo año de la carrera de nivel terciario 
+                  Analista de Sistemas de Computación. Vivo en Misiones - Argentina, tengo 30 años y estoy en busqueda de
+                  un lugar en el mundo de la programación. Me gustan los videojuegos competitivos.
                 </p>
                 <p class="card-text">
                   <small class="text-muted">Correo electrónico: leandroboos@gmail.com</small>
@@ -185,34 +197,37 @@
                 <p class="card-text">
                   <small class="text-muted">Whatsapp: +543765119764</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-data-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-perfil-add" class="btn btn-outline-primary card-btn btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+                <!-- <button type="button" id="btn-edit-data-perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-perfil-add" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 5%; left: 97%;"><i class="fa-solid fa-pen-to-square"></i></button> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="section-experience">
       <div class="container-fluid">
-        <h3>Experiencia laboral <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        <h3>Experiencia laboral <button type="button" id="btn-add-experience" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-add" class="btn btn-outline-primary btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
         <div class="card mb-3 shadow">
           <div class="row g-0">
-            <div class="col-md-2 col-btn" style="text-align:center;">
+            <div class="col-md-2 col-btn" style="text-align: center;">
               <img
                 src="./assets/images/maletin-web.png"
                 class="img-fluid rounded-start academic"
                 alt="experiencia laboral"
                 style="width: 130px; height: auto;"
               />
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-add-experience-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-experience-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 13%; left: 70%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-esperience-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-experience-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 13%; left: 90%;"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
             </div>
             <div class="col-md-10 col-btn">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Vendedor</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -221,29 +236,31 @@
                 <p class="card-text">
                   <small class="text-muted">Año: 2009</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-experience-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 13%; left: 93%"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-experience-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 13%; left: 97%"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="card mb-3 shadow">
           <div class="row g-0">
-            <div class="col-md-2 col-btn" style="text-align:center;">
+            <div class="col-md-2 col-btn" style="text-align: center;">
               <img
                 src="./assets/images/maletin-web.png"
                 class="img-fluid rounded-start academic"
                 alt="experiencia laboral"
                 style="width: 130px; height: auto;"
               />
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-add-experience-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-experience-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 13%; left: 70%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-esperience-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-experience-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 13%; left: 90%;"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
             </div>
             <div class="col-md-10 col-btn">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Vendedor</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -252,29 +269,31 @@
                 <p class="card-text">
                   <small class="text-muted">Año: 2009</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-experience-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 13%; left: 93%"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-experience-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 13%; left: 97%"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="card mb-3 shadow">
           <div class="row g-0">
-            <div class="col-md-2 col-btn" style="text-align:center;">
+            <div class="col-md-2 col-btn" style="text-align: center;">
               <img
                 src="./assets/images/maletin-web.png"
                 class="img-fluid rounded-start academic"
                 alt="experiencia laboral"
                 style="width: 130px; height: auto;"
               />
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-add-experience-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-experience-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 13%; left: 70%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-esperience-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-experience-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 13%; left: 90%;"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
             </div>
             <div class="col-md-10 col-btn">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Vendedor</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -283,18 +302,20 @@
                 <p class="card-text">
                   <small class="text-muted">Año: 2009</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-experience-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 13%; left: 93%"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-experience-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-experience-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 13%; left: 97%"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div> 
     </section>
+
     <section id="section-academic">
       <div class="container-fluid">
-        <h3>Educación <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        <h3>Educación <button type="button" id ="btn-add-academic" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-add" class="btn btn-outline-primary btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
         <div class="card mb-3 shadow">
           <div class="row g-0">
             <div class="col-md-2 col-btn" style="text-align:center;">
@@ -304,13 +325,14 @@
                 alt="Birrete"
                 style="width: 130px; height: auto;"
               />
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-academic-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-academic-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 13%; left: 70%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-academic-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-academic-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 13%; left: 90%"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
             </div>
             <div class="col-md-10 col-btn">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Escuela Tal</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -319,9 +341,10 @@
                 <p class="card-text">
                   <small class="text-muted">Año: 2009</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-academic-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 13%; left: 93%"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-academic-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 13%; left: 97%"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
@@ -335,13 +358,14 @@
                 alt="Birrete"
                 style="width: 130px; height: auto;"
               />
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-academic-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-academic-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 13%; left: 70%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-academic-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-academic-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 13%; left: 90%"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
             </div>
             <div class="col-md-10 col-btn">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Escuela Tal</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -350,9 +374,10 @@
                 <p class="card-text">
                   <small class="text-muted">Año: 2009</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-academic-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 13%; left: 93%"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-academic-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 13%; left: 97%"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
@@ -366,13 +391,14 @@
                 alt="Birrete"
                 style="width: 130px; height: auto;"
               />
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-academic-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-academic-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 13%; left: 70%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-academic-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-academic-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 13%; left: 90%"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
             </div>
             <div class="col-md-10 col-btn">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Escuela Tal</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -381,30 +407,32 @@
                 <p class="card-text">
                   <small class="text-muted">Año: 2009</small>
                 </p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="button" id="btn-edit-academic-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 13%; left: 93%"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-academic-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-academic-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 13%; left: 97%"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="section-skills">
       <div class="container-fluid">
-        <h3>Habilidades <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+        <h3>Habilidades <button type="button" id="btn-add-skill" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-add" class="btn btn-outline-primary btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
         <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col col-btn">
             <div class="card h-100 shadow text-center">
               <div class="card-body">
                 <h4 class="card-title">PHP 8</h4>
-                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
                 <!-- <label for="disk_c">Disk usage C:</label> -->
                 <meter id="disk_c" value="3" min="0" max="10"></meter>
                 <p>Trainee/Junior/Semi Senior/Senior</p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="tutton" id="btn-edit-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 20px; left: 220px;"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 20px; left: 260px;"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
@@ -412,13 +440,13 @@
             <div class="card h-100 shadow text-center">
               <div class="card-body">
                 <h4 class="card-title">PHP 8</h4>
-                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
                 <!-- <label for="disk_c">Disk usage C:</label> -->
                 <meter id="disk_c" value="3" min="0" max="10"></meter>
                 <p>Trainee/Junior/Semi Senior/Senior</p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="tutton" id="btn-edit-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 20px; left: 220px;"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 20px; left: 260px;"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
@@ -426,13 +454,13 @@
             <div class="card h-100 shadow text-center">
               <div class="card-body">
                 <h4 class="card-title">PHP 8</h4>
-                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
                 <!-- <label for="disk_c">Disk usage C:</label> -->
                 <meter id="disk_c" value="3" min="0" max="10"></meter>
                 <p>Trainee/Junior/Semi Senior/Senior</p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="tutton" id="btn-edit-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 20px; left: 220px;"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 20px; left: 260px;"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
@@ -440,39 +468,41 @@
             <div class="card h-100 shadow text-center">
               <div class="card-body">
                 <h4 class="card-title">PHP 8</h4>
-                <!-- <input type="range" id="rango1" class="form-range" min="0" max="4" step="1"/> -->
                 <!-- <label for="disk_c">Disk usage C:</label> -->
                 <meter id="disk_c" value="3" min="0" max="10"></meter>
                 <p>Trainee/Junior/Semi Senior/Senior</p>
-                <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="row testeando">
+                  <button type="tutton" id="btn-edit-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 20px; left: 220px;"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" id="btn-delete-skill-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-skill-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 20px; left: 260px;"><i class="fa-solid fa-trash-can"></i></button>  
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="section-proyects">
+
+    <section id="section-projects">
       <div class="container-fluid">
         <div class="row">
-          <h3>Proyectos <button type="button" class="btn btn-light btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
+          <h3>Proyectos <button type="button" id="btn-add-project" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-add" class="btn btn-outline-primary btn-circle shadow"><i class="fa-solid fa-plus"></i></button></h3>
         </div>
-        
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card h-100 shadow col-btn">
               <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 6%; left: 89%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 6%; left: 96%;"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
               <div class="col-btn">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                  <div class="row testeando">
+                    <button type="tutton" id="btn-edit-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 15%; left: 89%"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="tutton" id="btn-delete-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 15%; left: 96%"><i class="fa-solid fa-trash-can"></i></button>  
+                  </div>
                 </div>
               </div>
             </div>
@@ -480,16 +510,18 @@
           <div class="col">
             <div class="card h-100 shadow col-btn">
               <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 6%; left: 89%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 6%; left: 96%;"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
               <div class="col-btn">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                  <div class="row testeando">
+                    <button type="tutton" id="btn-edit-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 15%; left: 89%"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="tutton" id="btn-delete-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 15%; left: 96%"><i class="fa-solid fa-trash-can"></i></button>  
+                  </div>
                 </div>
               </div>
             </div>
@@ -497,16 +529,18 @@
           <div class="col">
             <div class="card h-100 shadow col-btn">
               <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 6%; left: 89%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 6%; left: 96%;"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
               <div class="col-btn">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                  <div class="row testeando">
+                    <button type="tutton" id="btn-edit-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 15%; left: 89%"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="tutton" id="btn-delete-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 15%; left: 96%"><i class="fa-solid fa-trash-can"></i></button>  
+                  </div>
                 </div>
               </div>
             </div>
@@ -514,16 +548,18 @@
           <div class="col">
             <div class="card h-100 shadow col-btn">
               <img src="./assets/images/project5.png" class="card-img-top img-fluid rounded-start academic" style="width: 200px; height: auto; align-self: center;" alt="proyecto">
-              <button class="btn btn-light img-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-              <button class="btn btn-light img-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button class="btn btn-light img-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+              <div class="row testeando">
+                <button type="button" id="btn-edit-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-add" class="btn btn-outline-primary img-btn btn-circle shadow" style="top: 6%; left: 89%;"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" id="btn-delete-project-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-img-project-delete" class="btn btn-outline-danger img-btn btn-circle shadow" style="top: 6%; left: 96%;"><i class="fa-solid fa-trash-can"></i></button>  
+              </div>
               <div class="col-btn">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button class="btn btn-light card-btn-add btn-circle shadow"><i class="fa-solid fa-plus"></i></button>
-                  <button class="btn btn-light card-btn-edit btn-circle shadow"><i class="fa-solid fa-pen-to-square"></i></button>
-                  <button class="btn btn-light card-btn-delete btn-circle shadow"><i class="fa-solid fa-trash-can"></i></button>
+                  <div class="row testeando">
+                    <button type="tutton" id="btn-edit-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-edit" class="btn btn-outline-primary card-btn btn-circle shadow" style="top: 15%; left: 89%"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="tutton" id="btn-delete-project-data" data-bs-toggle="modal" data-bs-target="#staticBackdrop-modal-data-project-delete" class="btn btn-outline-danger card-btn btn-circle shadow" style="top: 15%; left: 96%"><i class="fa-solid fa-trash-can"></i></button>  
+                  </div>
                 </div>
               </div>
             </div>
@@ -531,32 +567,690 @@
         </div>
       </div>
     </section>
+    <!-- secciones del portafolio fin -->
 
     <!-- inicio modales -->
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop-modal-img-perfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- Modal agregar/editar imagen de perfil-->
+    <div class="modal fade" id="staticBackdrop-modal-img-perfil-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Agregar imagen al perfil</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">Imagen de Perfil</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <form id="form-add-img-perfil" action="#" method="post">
-              <div class="row">
-
+          <form id="form-add-img-perfil" action="#" method="post">
+            <div class="modal-body">
+              <div class="row justify-content-center text-center">
+                <div style="background-color: grey; width: 400px; height: 400px; margin-bottom: 1%" class="shadow">
+                  <h4>vista previa</h4>
+                  <h5>400x400</h5>
+                </div>
               </div>
-            </form>
+              <div class="row justify-content-center">
+                <input class="form-control shadow" type="file" name="add-img-perfil" id="add-img-perfil" style="width: 400px;">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar foto -->
+    <div class="modal fade" id="staticBackdrop-modal-img-perfil-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar su foto de perfil?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar/editar datos acerca de mi -->
+    <div class="modal fade" id="staticBackdrop-modal-data-perfil-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Datos de perfil</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="#" method="post" id="form-about-me" autocomplete="off">
+                <div class="modal-body">
+                  <!-- tabs inicio -->
+                  <ul class="nav nav-tabs" role="tablist" id="pestañas">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="tab-biography" data-bs-toggle="tab" data-bs-target="#biography" type="button" role="tab" aria-controls="biography" aria-selected="true">Biografía</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-social" data-bs-toggle="tab" data-bs-target="#social" type="button" role="tab" aria-controls="social" aria-selected="false">Redes Sociales</button>
+                      </li>
+                  </ul>
+                  <!-- tabs fin -->
+
+                  <!-- tabs content inicio -->
+                  <div class="tab-content" id="contenidoPestañas">
+                    <div class="tab-pane fade show active" id="biography" role="tabpanel" aria-labelledby="tab-biography"> 
+                      <div class="mb-3">
+                        <label for="titulo" class="form-label">Titulo:</label>
+                        <input type="text" name="titulo" id="titulo" class="form-control shadow" placeholder="Ej.: Su titulo académico o puesto de trabajo">
+                      </div>
+                      <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control shadow" placeholder="Ingrese su nombre">
+                      </div>
+                      <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" class="form-control shadow" placeholder="Ingrese su apellido">
+                      </div>
+                      <div class="mb-3">
+                        <label for="about-you" class="form-label">Acerca de tí:</label>
+                        <textarea name="about-you" id="about-you" cols="30" rows="5" class="form-control shadow" placeholder="Escriba aqui algo acerca de usted..."></textarea>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="tab-social">
+                      <div class="mb-3">
+                        <label for="github" class="form-label">GitHub:</label>
+                        <input type="text" name="github" id="github" class="form-control shadow" placeholder="GitHub">
+                      </div>
+                      <div class="mb-3">
+                        <label for="linkedin" class="form-label">LinkedIn:</label>
+                        <input type="text" name="linkedin" id="linkedin" class="form-control shadow" placeholder="LinkedIn">
+                      </div>
+                      <div class="mb-3">
+                        <label for="facebook" class="form-label">Facebook:</label>
+                        <input type="text" name="facebook" id="facebook" class="form-control shadow" placeholder="Facebook">
+                      </div>
+                      <div class="mb-3">
+                        <label for="youtube" class="form-label">YouTube:</label>
+                        <input type="text" name="youtube" id="youtube" class="form-control shadow" placeholder="YouTube">
+                      </div>
+                      <div class="mb-3">
+                        <label for="instagram" class="form-label">Instagram:</label>
+                        <input type="text" name="instagram" id="instagram" class="form-control shadow" placeholder="Instagram">
+                      </div>
+                      <div class="mb-3">
+                        <label for="twitter" class="form-label">Twitter:</label>
+                        <input type="text" name="twitter" id="twitter" class="form-control shadow" placeholder="Twitter">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- tabs content fin -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary shadow">Aceptar</button>
+                </div>
+              </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Aceptar</button>
+        </div>
+    </div>
+    <!-- Modal agregar/editar imagen experiencia laboral -->
+    <div class="modal fade" id="staticBackdrop-modal-img-experience-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Imagen de la Empresa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <form id="form-add-img-experience" action="#" method="post">
+            <div class="modal-body">
+              <div class="row justify-content-center text-center">
+                <div style="background-color: grey; width: 400px; height: 400px; margin-bottom: 1%" class="shadow">
+                  <h4>vista previa</h4>
+                  <h5>400x400</h5>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <input class="form-control shadow" type="file" name="add-img-perfil" id="add-img-perfil" style="width: 400px;">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar imagen experiencia laboral -->
+    <div class="modal fade" id="staticBackdrop-modal-img-experience-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar la imagen de la empresa?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar experiencia laboral -->
+    <div class="modal fade" id="staticBackdrop-modal-data-experience-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos del Puesto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-experience">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="cargo" class="form-label">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" class="form-control shadow" placeholder="Ingrese su cargo o puesto" required>
+              </div>
+              <div class="mb-3">
+                <label for="empresa" class="form-label">Nombre de la Empresa:</label>
+                <input type="text" name="empresa" id="empresa" class="form-control shadow" placeholder="Ingrese el nombre de la Empresa" required>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="desde" class="form-label">Desde:</label>
+                    <input type="date" name="desde" id="desde" class="form-control shadow" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="hasta" class="form-label">Hasta:</label>
+                    <input type="date" name="hasta" id="hasta" class="form-control shadow">
+                  </div>
+                </div>
+                
+              </div>
+              <div class="mb-3">
+                <label for="referencia" class="form-label">Contacto de Referencia:</label>
+                <input type="text" name="referencia" id="referencia" class="form-control shadow" placeholder="Telefono de referencia" required>
+              </div>
+              <div class="mb-3">
+                <label for="tareas" class="form-label">Tareas realizadas:</label>
+                <textarea name="tareas" id="tareas" class="form-control shadow" cols="30" rows="5" placeholder="Nombre las tareas entre comas (,) ¡es muy importante!" required></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal editar experiencia laboral -->
+    <div class="modal fade" id="staticBackdrop-modal-data-experience-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos del Puesto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-experience">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="cargo" class="form-label">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" class="form-control shadow" placeholder="Ingrese su cargo o puesto" required>
+              </div>
+              <div class="mb-3">
+                <label for="empresa" class="form-label">Nombre de la Empresa:</label>
+                <input type="text" name="empresa" id="empresa" class="form-control shadow" placeholder="Ingrese el nombre de la Empresa" required>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="desde" class="form-label">Desde:</label>
+                    <input type="date" name="desde" id="desde" class="form-control shadow" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="hasta" class="form-label">Hasta:</label>
+                    <input type="date" name="hasta" id="hasta" class="form-control shadow">
+                  </div>
+                </div>
+                
+              </div>
+              <div class="mb-3">
+                <label for="referencia" class="form-label">Contacto de Referencia:</label>
+                <input type="text" name="referencia" id="referencia" class="form-control shadow" placeholder="Telefono de referencia" required>
+              </div>
+              <div class="mb-3">
+                <label for="tareas" class="form-label">Tareas realizadas:</label>
+                <textarea name="tareas" id="tareas" class="form-control shadow" cols="30" rows="5" placeholder="Nombre las tareas entre comas (,) ¡es muy importante!" required></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar experiencia laboral -->
+    <div class="modal fade" id="staticBackdrop-modal-data-experience-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar los datos de la empresa donde trabajó/a?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar educacion -->
+    <div class="modal fade" id="staticBackdrop-modal-data-academic-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos de tu Educación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-academic">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Titulo:</label>
+                <input type="text" id="titulo" name="titulo" class="form-control shadow" placeholder="Ingrese su Titulo" required>
+              </div>
+              <div class="mb-3">
+                <label for="institucion" class="form-label">Nombre de la Institución:</label>
+                <input type="text" name="institucion" id="institucion" class="form-control shadow" placeholder="Ingrese el nombre de la Institución" required>
+              </div>
+              <div class="mb-3">
+                <label for="locacion" class="form-label">Lugar:</label>
+                <input type="text" id="locacion" name="locacion" class="form-control shadow" placeholder="Pais, Provincia (la coma ',' no es opcional)">
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="desde" class="form-label">Desde:</label>
+                    <input type="date" name="desde" id="desde" class="form-control shadow" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="hasta" class="form-label">Hasta:</label>
+                    <input type="date" name="hasta" id="hasta" class="form-control shadow">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal editar educacion -->
+    <div class="modal fade" id="staticBackdrop-modal-data-academic-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"> Editar datos de tu Educación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-academic">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Titulo:</label>
+                <input type="text" id="titulo" name="titulo" class="form-control shadow" placeholder="Ingrese su Titulo" required>
+              </div>
+              <div class="mb-3">
+                <label for="institucion" class="form-label">Nombre de la Institución:</label>
+                <input type="text" name="institucion" id="institucion" class="form-control shadow" placeholder="Ingrese el nombre de la Institución" required>
+              </div>
+              <div class="mb-3">
+                <label for="locacion" class="form-label">Lugar:</label>
+                <input type="text" id="locacion" name="locacion" class="form-control shadow" placeholder="Pais, Provincia (la coma ',' no es opcional)">
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="desde" class="form-label">Desde:</label>
+                    <input type="date" name="desde" id="desde" class="form-control shadow" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="hasta" class="form-label">Hasta:</label>
+                    <input type="date" name="hasta" id="hasta" class="form-control shadow">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar educacion -->
+    <div class="modal fade" id="staticBackdrop-modal-data-academic-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar los datos del instituto donde estudió?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar/ediitar imagen educacion -->
+    <div class="modal fade" id="staticBackdrop-modal-img-academic-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Imagen del Instituto Educativo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="form-add-img-experience" action="#" method="post">
+            <div class="modal-body">
+              <div class="row justify-content-center text-center">
+                <div style="background-color: grey; width: 400px; height: 400px; margin-bottom: 1%" class="shadow">
+                  <h4>vista previa</h4>
+                  <h5>400x400</h5>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <input class="form-control shadow" type="file" name="add-img-perfil" id="add-img-perfil" style="width: 400px;">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar imagen educacion -->
+    <div class="modal fade" id="staticBackdrop-modal-img-academic-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar la imagen del instituto educativo?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar habilidad -->
+    <div class="modal fade" id="staticBackdrop-modal-data-skill-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos de la habilidad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-skill">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" class="form-control shadow" placeholder="Ej.: PHP, JavaScript, MS World, MS Escel, etc." required>
+              </div>
+              <div class="mb-3">
+                <label for="nivel" class="form-label">Nivel(0-10):</label>
+                <input type="range" name="nivel" id="nivel" class="form-range shadow" value="0" min="0" max="10" step="1" required>
+              </div>
+              <div class="mb-3">
+                <label for="rango" class="form-label">Rango:</label>
+                <select name="rango" id="rango" class="form-select shadow" placeholder="Seleccione algo" required>
+                  <option value="0" selected></option>
+                  <option value="1">Trainee (aprendiz)</option>
+                  <option value="2">Junior (novato)</option>
+                  <option value="3">Semi Senior (intermedio)</option>
+                  <option value="4">Senior (avnazado)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo habilidad:</label>
+                <select name="tipo" id="tipo" class="form-select shadow" placeholder="Seleccione algo" required>
+                  <option value="0" selected></option>
+                  <option value="1">Habilidad Dura</option>
+                  <option value="2">Habilidad Blanda</option>
+                  <option value="3">Herramienta</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>   
+    <!-- Modal editar habilidad -->
+    <div class="modal fade" id="staticBackdrop-modal-data-skill-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Editar datos de la habilidad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-skill">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" class="form-control shadow" placeholder="Ej.: PHP, JavaScript, MS World, MS Escel, etc." required>
+              </div>
+              <div class="mb-3">
+                <label for="nivel" class="form-label">Nivel(0-10):</label>
+                <input type="range" name="nivel" id="nivel" class="form-range shadow" value="0" min="0" max="10" step="1" required>
+              </div>
+              <div class="mb-3">
+                <label for="rango" class="form-label">Rango:</label>
+                <select name="rango" id="rango" class="form-select shadow" placeholder="Seleccione algo" required>
+                  <option value="0" selected></option>
+                  <option value="1">Trainee (aprendiz)</option>
+                  <option value="2">Junior (novato)</option>
+                  <option value="3">Semi Senior (intermedio)</option>
+                  <option value="4">Senior (avnazado)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo habilidad:</label>
+                <select name="tipo" id="tipo" class="form-select shadow" placeholder="Seleccione algo" required>
+                  <option value="0" selected></option>
+                  <option value="1">Habilidad Dura</option>
+                  <option value="2">Habilidad Blanda</option>
+                  <option value="3">Herramienta</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar habilidad -->
+    <div class="modal fade" id="staticBackdrop-modal-data-skill-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar los datos la habilidad?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar proyecto -->
+    <div class="modal fade" id="staticBackdrop-modal-data-project-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos del proyecto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-project">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="nombrePro" class="form-label">Nombre:</label>
+                <input type="text" id="nombrePro" name="nombrePro" class="form-control shadow" placeholder="Ingrese el nombre del proyecto" required>
+              </div>
+              <div class="mb-3">
+                <label for="descripcionPro" class="form-label">Descripcion:</label>
+                <textarea id="descripcionPro" name="descripcion" class="form-control shadow" cols="10" rows="5" placeholder="Describa su proyecto, herramientas utilizadas, ect..." required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="repositorio" class="form-label">Repositorio (enlace):</label>
+                <input type="text" id="repositorio" name="repositorio" class="form-control shadow" placeholder="Ingrese el URL del repositorio">
+              </div>
+              <div class="mb-3">
+                <label for="sitio" class="form-label">Sitio (demo):</label>
+                <input type="text" id="sitio" name="sitio" class="form-control shadow" placeholder="Ingrese el URL del sitio">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal editar proyecto -->
+    <div class="modal fade" id="staticBackdrop-modal-data-project-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labeledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Editar datos del proyecto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <form action="#" method="post" id="form-project">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="nombrePro" class="form-label">Nombre:</label>
+                <input type="text" id="nombrePro" name="nombrePro" class="form-control shadow" placeholder="Ingrese el nombre del proyecto" required>
+              </div>
+              <div class="mb-3">
+                <label for="descripcionPro" class="form-label">Descripcion:</label>
+                <textarea id="descripcionPro" name="descripcion" class="form-control shadow" cols="10" rows="5" placeholder="Describa su proyecto, herramientas utilizadas, ect..." required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="repositorio" class="form-label">Repositorio (enlace):</label>
+                <input type="text" id="repositorio" name="repositorio" class="form-control shadow" placeholder="Ingrese el URL del repositorio">
+              </div>
+              <div class="mb-3">
+                <label for="sitio" class="form-label">Sitio (demo):</label>
+                <input type="text" id="sitio" name="sitio" class="form-control shadow" placeholder="Ingrese el URL del sitio">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar proyecto -->
+    <div class="modal fade" id="staticBackdrop-modal-data-project-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar los datos del proyecto?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal agregar/editar imagen proyecto -->
+    <div class="modal fade" id="staticBackdrop-modal-img-project-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Imagen del Proyecto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="form-add-img-project" action="#" method="post">
+            <div class="modal-body">
+              <div class="row justify-content-center text-center">
+                <div style="background-color: grey; width: 400px; height: 400px; margin-bottom: 1%" class="shadow">
+                  <h4>vista previa</h4>
+                  <h5>400x400</h5>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <input class="form-control shadow" type="file" name="add-img-perfil" id="add-img-perfil" style="width: 400px;">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary shadow">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal borrar imagen proyecto -->
+    <div class="modal fade" id="staticBackdrop-modal-img-project-delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Atención!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h6>Desea eliminar la imagen del proyecto?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger">Aceptar</button>
+            </div>
         </div>
       </div>
     </div>
     <!-- fin modales -->
     
+    <!-- footer inicio -->
     <footer class="card-footer" style="background:rgba(0, 0, 0, 0.788);" id="section-contact">
       <div class="container-fluid">
         <!-- <h3>Contacto</h3>
@@ -587,6 +1281,8 @@
        
       </div>
     </footer>
+    <!-- footer fin -->
+
     <!-- bootstap lib min js-->
     <script src="./assets/css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
@@ -595,8 +1291,3 @@
     <script src="./assets/js/indexJS.js"></script>
   </body>
 </html>
-
-<!-- botones de font awesome
-editar = <i class="fa-solid fa-pen-to-square"></i>
-eliminar = <i class="fa-solid fa-trash-can"></i> 
-nuevo/agregar = <i class="fa-solid fa-plus"></i> -->
